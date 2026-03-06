@@ -16,3 +16,45 @@ let atletas = [
    notas: [10, 10, 10, 9, 9.5]
  }
 ];
+
+for (let i = 0; i < atletas.length; i++) {
+
+  //Pegando as informações de cada atleta
+
+  let atleta = atletas[i];
+  
+  // Notas e nome de cada atleta
+
+  let notas = atleta.notas;
+  let nome = atleta.nome;
+
+  //Ordenando as notas de cada atleta
+
+  notas = notas.sort((a, b) => a-b);
+
+  //Tirando a primeira e a última notas do array de notas ordenado
+ 
+  let notasComputadas = notas.slice(1, 4);
+
+  //Somando as notas
+  let soma = 0;
+
+  notasValidas.forEach(function(nota){
+    soma = soma + nota;
+    return soma;
+  })
+
+  // Calculando a média das notas de cada atleta
+  let media = soma/notasComputadas.length;
+  
+  // Exibindo o resultado
+
+  let resultado = `Atleta: ${nome}
+Notas Obtidas: ${notas.join(", ")}
+Média Válida: ${media}\n`
+
+  console.log(resultado);
+  
+  
+}
+

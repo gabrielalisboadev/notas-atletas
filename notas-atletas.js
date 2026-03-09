@@ -34,7 +34,7 @@ for (let i = 0; i < atletas.length; i++) {
 
   //Tirando a primeira e a última notas do array de notas ordenado
  
-  let notasComputadas = notas.slice(1, 4);
+  let notasValidas = notas.slice(1, 4);
 
   //Somando as notas
   let soma = 0;
@@ -45,7 +45,7 @@ for (let i = 0; i < atletas.length; i++) {
   })
 
   // Calculando a média das notas de cada atleta
-  let media = soma/notasComputadas.length;
+  let media = soma/notasValidas.length;
   
   // Exibindo o resultado
 
